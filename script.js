@@ -3,6 +3,7 @@
 const body = document.querySelector('body');
 const p = document.createElement('p');
 const container = document.querySelector('#container');
+const colorModeText = document.querySelector('.colorModeText');
 const btn1Yes = document.createElement('button');
 const btn2No = document.createElement('button');
 const btn3Draw = document.createElement('button');
@@ -86,9 +87,9 @@ const newBtnLineYesNo = function (
   const p = document.createElement('p');
   p.innerText = message;
   btn1Yes.innerText = btn1Text;
-  btn1Yes.className = btn1Class;
+  btn1Yes.className = `${btn1Class} colorMode2 colorMode1`;
   btn2No.innerText = btn2Text;
-  btn2No.className = btn2Class;
+  btn2No.className = `${btn2Class} colorMode2 colorMode1`;
 
   p.append(btn1Yes);
   p.append(btn2No);
@@ -105,9 +106,9 @@ const newBtnLineDrawStay = function (
   const p = document.createElement('p');
   p.innerText = message;
   btn3Draw.innerText = btn3Text;
-  btn3Draw.className = btn3Class;
+  btn3Draw.className = `${btn3Class} colorMode2 colorMode1`;
   btn4Stay.innerText = btn4Text;
-  btn4Stay.className = btn4Class;
+  btn4Stay.className = `${btn4Class} colorMode2 colorMode1`;
 
   p.append(btn3Draw);
   p.append(btn4Stay);
@@ -133,6 +134,8 @@ const endGame = function () {
     );
     playing = false;
     noGame();
+  } else if (computerDone === true && playerDone === false) {
+    playerGameLoop();
   } else if (computerDone === true && playerDone === true) {
     if (currentPlayerScore > currentComputerScore) {
       newLine(
@@ -155,6 +158,7 @@ const endGame = function () {
     }
   }
 };
+
 const drawCard = function () {
   cardIndex = Math.trunc(Math.random() * cardList.length);
   cardChoice = cardList.splice([cardIndex], 1);
@@ -279,4 +283,10 @@ const init = function () {
   btn2No.addEventListener('click', noGame);
 };
 
+const colorMode = function () {
+  console.log('color');
+};
+
 init();
+
+colorModeText.addEventListener('click', colorMode);

@@ -3,35 +3,49 @@
 *::after {
   box-sizing: border-box;
   font-family: 'VT323', monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
-body {
+/* body {
   background-color: rgb(20, 20, 20);
 
   font-size: 1.5em;
   color: #fff;
-  text-shadow: 0 0 1px rgb(204, 204, 204), 0 0 1px rgb(221, 221, 221),
-    0 0 2px rgb(212, 212, 212), 0 0 2px #0fa, 0 0 1px #0fa, 0 0 1px #0fa,
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255),
+    0 0 2px rgb(255, 255, 255), 0 0 5px #0fa, 0 0 1px #0fa, 0 0 1px #0fa,
     0 0 2px #0fa, 0 0 2px #0fa;
-  /* text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%); */
+  text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+} */
+
+/* button {
+  background-color: rgb(20, 20, 20);
+  color: rgb(241, 255, 251);
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255),
+    0 0 2px rgb(255, 255, 255), 0 0 2px #0fa, 0 0 1px #0fa, 0 0 1px #0fa,
+    0 0 2px #0fa, 0 0 2px #0fa;
+  border: 0px solid red;
+} */
+
+.colorModeText {
+  text-align: right;
+  margin-right: 0.5rem;
 }
 
-button {
+.colorMode1 {
   background-color: rgb(20, 20, 20);
-  font-size: 1.2em;
-  color: #fff;
-  text-shadow: 0 0 1px rgb(204, 204, 204), 0 0 1px rgb(221, 221, 221),
-    0 0 2px rgb(212, 212, 212), 0 0 2px #0fa, 0 0 1px #0fa, 0 0 1px #0fa,
+  color: rgb(241, 255, 251);
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 1px rgb(255, 255, 255),
+    0 0 2px rgb(255, 255, 255), 0 0 2px #0fa, 0 0 1px #0fa, 0 0 1px #0fa,
     0 0 2px #0fa, 0 0 2px #0fa;
   border: 0px solid red;
 }
 
-.ascii {
-  font-size: 0.2vh;
-  font-family: monospace;
-}
-
-.hidden {
-  display: none;
+.colorModeS2 {
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 244, 225);
+  text-shadow: 0 0 1px rgb(255, 255, 255), 0 0 2px rgba(255, 236, 176, 0.842),
+    0 0 5px rgb(255, 255, 255), 0 0 5px rgb(255, 166, 0),
+    0 0 3px rgb(173, 113, 0), 0 0 3px rgb(173, 115, 5), 0 0 2px rgb(226, 90, 0),
+    0 0 2px rgb(255, 166, 0);
+  border: 0px solid red;
 }
